@@ -1,8 +1,13 @@
 import React from 'react'
+import WelcomeLine from './WelcomeLine'
 
-const Welcome = () => {
+
+const Welcome = (props) => {
   return (
-    <div>Welcome</div>
+    <div className="welcome-container">
+      <h1 className="welcome-title">Welcome, check out anime, movies, etc</h1>
+      <WelcomeLine />
+    </div>
   )
 }
 
