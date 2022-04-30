@@ -1,9 +1,9 @@
 import './App.css';
-import Icon from './Icon'
+import Icon from './Components/Icon/Icon'
 
 function App() {
   return (
-    <div className="App">
+    <div className="parent-container">
       <Icon />
     </div>
   );

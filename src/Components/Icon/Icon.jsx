@@ -21,34 +21,34 @@ const Icon = () => {
           size: "2.2em",
           color: colorIcon,
       }}>
-        <button>
+        <button id="button-icon">
           <div className="icon">
             <SiMyanimelist />
           </div>
         </button>
         {!icons && <>
-          <button>
+          <button id="button-icon">
             <div className="icon">
               <FaBook />
             </div>
           </button>
-          <button>
+          <button id="button-icon">
             <div className="icon">
               <BiMoviePlay />
             </div>
           </button>
-          <button>
+          <button id="button-icon">
             <div className="icon">
               <FaTv />
             </div>
           </button>
-          <button>
+          <button id="button-icon">
             <div className="icon">
               <IoSettingsSharp />
             </div>
           </button>
         </>}
-        <button onClick={changeIcons}>
+        <button onClick={changeIcons} id="button-icon">
           <div className="icon">
             <BsPlus />
           </div>
