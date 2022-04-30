@@ -19,8 +19,12 @@
     padding: 1rem;
     margin: 1.5rem 1.5rem 0rem 1.5rem;
     border: 2px solid;
-    border-radius: 50%;
+    border-radius: 30%;
     background-color: white;
+}
+
+.icon:hover {
+    background-color: #139999;
 }
 
 #button-icon {
@@ -29,4 +33,10 @@
     background-color: inherit;
     padding: 0;
     cursor: pointer;
+}
+
+.line {
+    background-color: black;
+    height: 100vh;
+    width: 2px;
 }
