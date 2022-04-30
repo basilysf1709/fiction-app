@@ -5,7 +5,7 @@ import WelcomeLine from './WelcomeLine'
 const Welcome = (props) => {
   return (
     <div className="welcome-container">
-      <h1 className="welcome-title">Welcome, check out anime, movies, etc</h1>
+      <h1 className="welcome-title">Every Entertainment in one place</h1>
       <WelcomeLine />
     </div>
   )

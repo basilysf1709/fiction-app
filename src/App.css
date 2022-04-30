@@ -21,10 +21,12 @@
     border: 2px solid;
     border-radius: 30%;
     background-color: white;
+    transition: all .2s ease-in-out;
 }
 
 .icon:hover {
-    background-color: #139999;
+    background-color: #9fa5a5;
+    transform: scale(1.05)
 }
 
 #button-icon {
@@ -40,6 +42,13 @@
     height: 100vh;
     width: 2px;
 }
+
+.fiction-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 .welcome-container {
     width: 100%;
 }
@@ -52,6 +61,7 @@ Welcome container should have a better margin scale. 35px is bad. make it relati
     margin: 1rem 1rem 1rem 1rem;
     display: flex;
     justify-content: center;
+    color: black;
 }
 
 .welcome-line {
