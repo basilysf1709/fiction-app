@@ -13,11 +13,13 @@ function App() {
       <Icon />
       <Line />
       <div className="fiction-container">
-        {/* <Welcome /> */}
-        <Anime />
-        <Books />
+        <Welcome />
+        <Anime start="0" end="4"/>
+        <Anime start="4" end="8"/>
+        <Anime start="8" end="12"/>
+        {/* <Books />
         <Movies />
-        <TVShows />
+        <TVShows /> */}
       </div>
     </div>
   );

@@ -4,14 +4,13 @@ import { BsPlus } from 'react-icons/bs'
 import { IconContext } from "react-icons";
 
 
-const Anime = () => {
+const Anime = (props) => {
   const [data, setData] = useState()
 
   const getRes = async () => {
       try {
         const response = await axios.get('https://api.jikan.moe/v3/top/anime/1/favorite');
         const res = response.data.top
-        console.log(res[0])
         setData(res);
       } catch (e) {
         console.log(e)
@@ -25,7 +24,7 @@ const Anime = () => {
   return (
     <div className="anime-container">
       <div className="anime-card-container">
-        {data != undefined && data.slice(0, 4).map(( anime ) => (
+        {data != undefined && data.slice(parseInt(props.start), parseInt(props.end)).map(( anime ) => (
           <div className="anime-card" key={anime.mal_id}>
             <img src={anime.image_url} id="anime-image" />
             <h4 id="anime-words">{anime.title.substring(0,21).replace('(', '').replace(':','')}</h4>
