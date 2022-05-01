@@ -1,3 +1,8 @@
+:root {
+    --blue: white;
+    --black: black
+}
+
 * {
     margin: 0;
 }
@@ -18,14 +23,14 @@
     width: 2rem;
     padding: 1rem;
     margin: 1.5rem 1.5rem 0rem 1.5rem;
-    border: 2px solid;
-    border-radius: 30%;
+    border: 1px solid;
+    /* border-radius: 30%; */
     background-color: white;
     transition: all .2s ease-in-out;
 }
 
 .icon:hover {
-    background-color: #9fa5a5;
+    background-color: var(--blue);
     transform: scale(1.05)
 }
 
@@ -36,12 +41,12 @@
     padding: 0;
     cursor: pointer;
 }
-
+/* 
 .line {
-    background-color: black;
+    background-color: var(--black);
     height: 100vh;
     width: 2px;
-}
+} */
 
 .fiction-container {
     width: 100%;
@@ -61,11 +66,76 @@ Welcome container should have a better margin scale. 35px is bad. make it relati
     margin: 1rem 1rem 1rem 1rem;
     display: flex;
     justify-content: center;
-    color: black;
+    color: var(--black);
 }
 
-.welcome-line {
-    background-color: black;
+/* .welcome-line {
+    background-color:var(--black);
     width: 100%;
     height: 2px;
+} */
+
+.anime-card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Montserrat', sans-serif;
 }
+
+.anime-card {
+    border: 1px solid;
+    /* border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem; */
+    background-color: white;
+    transition: all .2s ease-in-out;
+    border-color: var(--black);
+    margin: 2rem;
+    padding-bottom: 0.5rem;
+}
+.anime-card:hover {
+    background-color: var(--blue);
+    cursor: pointer;
+    transform: scale(1.02)
+}
+.anime-card-plus {
+    border: 1px solid;
+    width: 10vw;
+    background-color: white;
+    transition: all .2s ease-in-out;
+    border-color: var(--black);
+    margin: 2rem;
+    /* Fix the width*/
+}
+
+.anime-icon-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.anime-card-plus:hover {
+    background-color: var(--blue);
+    cursor: pointer;
+    transform: scale(1.02)
+}
+#anime-image {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    filter: contrast(1.0) brightness(1) grayscale(0.2);
+}
+
+#anime-words {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.3rem;
+}
+
+/* .anime-line {
+    background-color: var(--black);
+    width: 100%;
+    height: 2px;
+} */

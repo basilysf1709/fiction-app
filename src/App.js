@@ -13,7 +13,7 @@ function App() {
       <Icon />
       <Line />
       <div className="fiction-container">
-        <Welcome />
+        {/* <Welcome /> */}
         <Anime />
         <Books />
         <Movies />
