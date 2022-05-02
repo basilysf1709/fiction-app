@@ -8,18 +8,18 @@ import Movies from './Components/Movies/Movies';
 import TVShows from './Components/TVShows/TVShows';
 
 function App() {
+  const start = "0"
+  const end = "4"
   return (
     <div className="parent-container">
       <Icon />
       <Line />
       <div className="fiction-container">
         <Welcome />
-        <Anime start="0" end="4"/>
-        <Anime start="4" end="8"/>
-        <Anime start="8" end="12"/>
-        {/* <Books />
+        <Anime start={start} end={end}/>
+        <Books start={start} end={end}/>
         <Movies />
-        <TVShows /> */}
+        {/* <TVShows />  */}
       </div>
     </div>
   );

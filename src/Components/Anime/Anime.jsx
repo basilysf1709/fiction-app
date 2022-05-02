@@ -16,7 +16,6 @@ const Anime = (props) => {
         console.log(e)
       }
     }
-
   useEffect(() => {
     getRes()
   }, []);
@@ -24,9 +23,9 @@ const Anime = (props) => {
   return (
     <div className="anime-container">
       <div className="anime-card-container">
-        {data != undefined && data.slice(parseInt(props.start), parseInt(props.end)).map(( anime ) => (
+        {data !== undefined && data.slice(parseInt(props.start), parseInt(props.end)).map(( anime ) => (
           <div className="anime-card" key={anime.mal_id}>
-            <img src={anime.image_url} id="anime-image" />
+            <img src={anime.image_url} id="anime-image" alt={anime.title}/>
             <h4 id="anime-words">{anime.title.substring(0,21).replace('(', '').replace(':','')}</h4>
             <p id="anime-words">Episodes: {anime.episodes}</p>
             <p id="anime-words">Rank: {anime.rank}</p>

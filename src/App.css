@@ -17,6 +17,9 @@
 .icons-container {
     display: flex;
     flex-direction: column;
+    margin-top: 23vh;
+    /* position: fixed; */
+    /* Fix this when trying to make it responsive */
 }
 
 .icon {
@@ -24,7 +27,7 @@
     padding: 1rem;
     margin: 1.5rem 1.5rem 0rem 1.5rem;
     border: 1px solid;
-    border-radius: 30%;
+    border-radius: 0%;
     background-color: white;
     transition: all .2s ease-in-out;
 }
@@ -42,11 +45,11 @@
     cursor: pointer;
 }
 
-.line {
+/* .line {
     background-color: var(--black);
     height: '100%';
     width: 2px;
-}
+} */
 
 .fiction-container {
     width: 100%;
@@ -69,20 +72,20 @@ Welcome container should have a better margin scale. 35px is bad. make it relati
     color: var(--black);
 }
 
-.welcome-line {
+/* .welcome-line {
     background-color:var(--black);
     width: 100%;
     height: 2px;
-}
+} */
 
-.anime-card-container {
+.anime-card-container, .books-card-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     font-family: 'Montserrat', sans-serif;
 }
 
-.anime-card {
+.anime-card, .books-card {
     border: 1px solid;
     /* border-bottom-left-radius: 1.5rem;
     border-bottom-right-radius: 1.5rem; */
@@ -92,21 +95,22 @@ Welcome container should have a better margin scale. 35px is bad. make it relati
     margin: 2rem;
     padding-bottom: 0.5rem;
 }
-#anime-image {
-    height: 80%;
-    width: 100%;
+#anime-image, #books-image {
+    height: 300px;
+    width: 200px;
+    /* Make the height and width of this application responsive */
     display: flex;
     justify-content: center;
     margin: auto;
     filter: contrast(1.0) brightness(1) grayscale(0.2);
 }
-.anime-card:hover {
+.anime-card:hover, .books-card:hover {
     background-color: white;
     cursor: pointer;
     transform: scale(1.02);
     filter: contrast(1.5) brightness(1) grayscale(0.8);
 }
-.anime-card-plus {
+.anime-card-plus, .books-card-plus {
     border: 1px solid;
     width: 10vw;
     background-color: white;
@@ -116,27 +120,27 @@ Welcome container should have a better margin scale. 35px is bad. make it relati
     /* Fix the width*/
 }
 
-.anime-icon-container {
+.anime-icon-container, .books-icon-container {
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
 }
-.anime-card-plus:hover {
+.anime-card-plus:hover, .books-card-plus:hover {
     /* background-color: var(--blue); */
     cursor: pointer;
     transform: scale(1.02)
 }
 
-#anime-words {
+#anime-words, #books-words {
     display: flex;
     justify-content: center;
     margin-top: 0.3rem;
 }
 
-.anime-line {
+/* .anime-line, .books-line {
     background-color: var(--black);
     width: 100%;
     height: 2px;
-}
+} */
