@@ -5,7 +5,6 @@ import Welcome from './Components/Welcome/Welcome';
 import Anime from './Components/Anime/Anime';
 import Books from './Components/Books/Books';
 import Movies from './Components/Movies/Movies';
-import TVShows from './Components/TVShows/TVShows';
 
 function App() {
   const start = "0"
@@ -16,10 +15,10 @@ function App() {
       <Line />
       <div className="fiction-container">
         <Welcome />
-        <Anime start={start} end={end}/>
-        <Books start={start} end={end}/>
-        <Movies />
-        {/* <TVShows />  */}
+        <Anime start={start} end={end} />
+        <Books start={start} end={end} />
+        <Movies start={start} end={end} type="Movies"/>
+        <Movies start={start} end={end} type="TVs"/> 
       </div>
     </div>
   );

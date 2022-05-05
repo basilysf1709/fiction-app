@@ -45,11 +45,11 @@
     cursor: pointer;
 }
 
-/* .line {
+.line {
     background-color: var(--black);
     height: '100%';
     width: 2px;
-} */
+}
 
 .fiction-container {
     width: 100%;
@@ -72,20 +72,20 @@ Welcome container should have a better margin scale. 35px is bad. make it relati
     color: var(--black);
 }
 
-/* .welcome-line {
+.welcome-line {
     background-color:var(--black);
     width: 100%;
     height: 2px;
-} */
+}
 
-.anime-card-container, .books-card-container {
+.anime-card-container, .books-card-container, .movies-card-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     font-family: 'Montserrat', sans-serif;
 }
 
-.anime-card, .books-card {
+.anime-card, .books-card, .movies-card {
     border: 1px solid;
     /* border-bottom-left-radius: 1.5rem;
     border-bottom-right-radius: 1.5rem; */
@@ -95,22 +95,22 @@ Welcome container should have a better margin scale. 35px is bad. make it relati
     margin: 2rem;
     padding-bottom: 0.5rem;
 }
-#anime-image, #books-image {
+#anime-image, #books-image, #movies-image {
     height: 300px;
     width: 200px;
     /* Make the height and width of this application responsive */
     display: flex;
     justify-content: center;
     margin: auto;
-    filter: contrast(1.0) brightness(1) grayscale(0.2);
+    filter: contrast(1.5) brightness(1) grayscale(0.5);
 }
-.anime-card:hover, .books-card:hover {
+.anime-card:hover, .books-card:hover, .movies-card:hover {
     background-color: white;
     cursor: pointer;
     transform: scale(1.02);
     filter: contrast(1.5) brightness(1) grayscale(0.8);
 }
-.anime-card-plus, .books-card-plus {
+.anime-card-plus, .books-card-plus, .movies-card-plus {
     border: 1px solid;
     width: 10vw;
     background-color: white;
@@ -120,27 +120,27 @@ Welcome container should have a better margin scale. 35px is bad. make it relati
     /* Fix the width*/
 }
 
-.anime-icon-container, .books-icon-container {
+.anime-icon-container, .books-icon-container, .movies-icon-container {
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
 }
-.anime-card-plus:hover, .books-card-plus:hover {
+.anime-card-plus:hover, .books-card-plus:hover, .movies-card-plus:hover {
     /* background-color: var(--blue); */
     cursor: pointer;
     transform: scale(1.02)
 }
 
-#anime-words, #books-words {
+#anime-words, #books-words, #movies-words {
     display: flex;
     justify-content: center;
     margin-top: 0.3rem;
 }
 
-/* .anime-line, .books-line {
+.anime-line, .books-line, .movies-line {
     background-color: var(--black);
     width: 100%;
     height: 2px;
-} */
+}

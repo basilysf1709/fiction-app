@@ -11,7 +11,6 @@ const Books = (props) => {
       try {
         const response = await axios.get(url);
         const res = response.data.results.books
-        console.log(res)
         setData(res);
       } catch (err) {
         console.log(err)
