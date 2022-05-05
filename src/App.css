@@ -83,6 +83,7 @@ Welcome container should have a better margin scale. 35px is bad. make it relati
     flex-direction: row;
     justify-content: space-around;
     font-family: 'Montserrat', sans-serif;
+    flex-wrap: wrap;
 }
 
 .anime-card, .books-card, .movies-card {
@@ -111,13 +112,14 @@ Welcome container should have a better margin scale. 35px is bad. make it relati
     filter: contrast(1.5) brightness(1) grayscale(0.8);
 }
 .anime-card-plus, .books-card-plus, .movies-card-plus {
+    width: 200px;
+    height: 373.39px;
     border: 1px solid;
-    width: 10vw;
     background-color: white;
     transition: all .2s ease-in-out;
     border-color: var(--black);
     margin: 2rem;
-    /* Fix the width*/
+    padding-bottom: 0.5rem;
 }
 
 .anime-icon-container, .books-icon-container, .movies-icon-container {
