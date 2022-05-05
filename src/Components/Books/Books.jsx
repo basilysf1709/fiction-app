@@ -11,6 +11,7 @@ const Books = (props) => {
       try {
         const response = await axios.get(url);
         const res = response.data.results.books
+        console.log(res)
         setData(res);
       } catch (err) {
         console.log(err)
@@ -26,8 +27,12 @@ const Books = (props) => {
         {data !== undefined && data.slice(parseInt(props.start), parseInt(props.end)).map(( books ) => (
           <div className="books-card" key={books.rank}>
             <img src={books.book_image} id="books-image" alt={books.title}/>
-            <h4 id="books-words">{books.title.substring(0,21).replace('(', '').replace(':','')}</h4>
-            <p id="books-words">Publisher: {books.publisher}</p>
+            {books.title.length < 20 ? (<h4 id="books-words">
+              {books.title.substring(0,21).replace('(', '').replace(':','')}
+            </h4>) : (<h4 id="books-words">
+              {books.title.substring(0,16).replace('(', '').replace(':','')}...
+            </h4>)}
+            <p id="books-words">On List: {books.weeks_on_list} weeks</p>
             <p id="books-words">Rank: {books.rank}</p>
           </div>
         ))}

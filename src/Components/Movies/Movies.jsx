@@ -26,7 +26,11 @@ const Movies = ( props ) => {
         {data !== undefined && data.slice(parseInt(props.start), parseInt(props.end)).map(( movies ) => (
           <div className="movies-card" key={movies.id}>
             <img src={movies.image} id="movies-image" alt={movies.title}/>
-            <h4 id="movies-words">{movies.title.substring(0,21).replace('(', '').replace(':','')}</h4>
+            {movies.title.length < 20 ? (<h4 id="movies-words">
+              {movies.title.substring(0,21).replace('(', '').replace(':','')}
+            </h4>) : (<h4 id="movies-words">
+              {movies.title.substring(0,16).replace('(', '').replace(':','')}...
+            </h4>)}
             <p id="movies-words">Rating: {movies.imDbRating}</p>
             <p id="movies-words">Rank: {movies.rank}</p>
           </div>

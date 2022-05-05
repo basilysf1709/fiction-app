@@ -67,8 +67,7 @@ Welcome container should have a better margin scale. 35px is bad. make it relati
     font-family: 'Montserrat', sans-serif;
     padding: 1rem;
     margin: 1rem 1rem 1rem 1rem;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     color: var(--black);
 }
 
@@ -145,4 +144,31 @@ Welcome container should have a better margin scale. 35px is bad. make it relati
     background-color: var(--black);
     width: 100%;
     height: 2px;
+}
+
+@media screen and (max-width: 405px) {
+    .icons-container {
+        display: none;
+    }
+    .line {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .icons-container {
+        display: none;
+    }
+    .anime-card, .books-card, .movies-card {
+        height: 300px;
+        width: 180px;
+    }
+    #anime-image, #books-image, #movies-image {
+        height: 225px;
+        width: 180px;
+    }
+    .anime-card-plus, .books-card-plus, .movies-card-plus {
+        height: 300px;
+        width: 180px;
+    }
 }
