@@ -5,18 +5,18 @@ import { IconContext } from "react-icons";
 
 const Movies = ( props ) => {
   const [data, setData] = useState()
+  const type = props.type
 
-  const getRes = async () => {
+  useEffect(() => {
+    const getRes = async () => {
       try {
-        const response = await axios.get(`https://imdb-api.com/en/API/Top250${props.type}/k_z20oo12x`);
+        const response = await axios.get(`https://imdb-api.com/en/API/Top250${type}/k_z20oo12x`);
         const res = response.data.items
         setData(res);
-        console.log(res)
       } catch (e) {
         console.log(e)
       }
     }
-  useEffect(() => {
     getRes()
   }, []);
 
