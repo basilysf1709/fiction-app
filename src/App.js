@@ -12,7 +12,7 @@ import Anime from './Components/Anime/Anime';
 import Books from './Components/Books/Books';
 import Movies from './Components/Movies/Movies';
 
-function App() {
+const App = () => {
   const start = "0"
   const end = "3"
   return (
